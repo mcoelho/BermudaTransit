@@ -16,7 +16,7 @@ class StaticPageController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.index');
     }
 
     /**
@@ -79,21 +79,41 @@ class StaticPageController extends Controller
      * @return Response
      */
 
-    public function contact()
-    {
-      return view('pages.contact');
-    }
-
     public function home()
     {
+
       return view('pages.home');
+
+    }
+
+
+    public function busschedule()
+    {
+
+      return view('pages.busschedule');
+
+    }
+
+
+    public function busfare()
+    {
+
+      return view('pages.busfare');
+
+    }
+
+    public function contact()
+    {
+
+      return view('pages.contact');
+
     }
 
     public function about()
     {
 
       return view('pages.about');
-    }
 
+    }
 
 }
